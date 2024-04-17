@@ -1,4 +1,6 @@
 # sample_list ReadMe
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/tomgly/sample_list/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/tomgly/sample_list/blob/main/README.ja.md)
 
 sample_list is a Flutter project designed for learning Isar Database's local DB package. This README serves as a comprehensive guide, covering everything from installation instructions to a detailed description of its features.
 
