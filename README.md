@@ -1,6 +1,6 @@
 # sample_list ReadMe
 
-sample_list is a Flutter and Dart project specifically designed for learning Isar Database's local DB package. This README serves as a comprehensive guide, covering everything from installation instructions to a detailed description of its features.
+sample_list is a Flutter project designed for learning Isar Database's local DB package. This README serves as a comprehensive guide, covering everything from installation instructions to a detailed description of its features.
 
 ## Table of Contents
 
@@ -72,7 +72,7 @@ cd sample-list
 flutter pub get
 ```
 
-3. If you want to change your items, create a new file or edit like this [collections/car.dart](lib/collections/car.dart) 
+3. If you want to change your items, edit this [collections/car.dart](lib/collections/car.dart) or create a new file like this:
 
 ```dart
 import 'package:isar/isar.dart';
@@ -89,13 +89,13 @@ class [File Name] {
 }
 ```
 
-4. Run the following command to generate an auto-generated file of collection classes.
+4. Run the following command to generate an auto-generated file of collection classes:
 
 ```bash
 flutter pub run build_runner build
 ```
 
-When executed, *.g.dart file is automatically generated as follows this
+When executed, *.g.dart file is automatically generated as follows this:
 
 ```
 .
