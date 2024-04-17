@@ -1,8 +1,8 @@
-# sample_list の README
+# sample_list の ReadMe
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/tomgly/sample_list/blob/main/README.md)
 [![en](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/tomgly/sample_list/blob/main/README.ja.md)
 
-sample_list は、Isar Database のローカル DB パッケージを学習するために設計された Flutter プロジェクトです。この README は、インストール手順から機能の詳細な説明までを網羅した包括的なガイドとして機能します。
+sample_list は、Isar Database のローカル DB パッケージを学習するために設計された Flutter プロジェクトです。この README は、インストール手順から機能の詳細な説明までを網羅したガイドです。
 
 ## 目次
 
