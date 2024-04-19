@@ -4,9 +4,9 @@ import 'package:intl/intl.dart';
 import 'collections/car.dart';
 
 class AddPage extends StatefulWidget {
-  const AddPage({required this.isar});
-
   final Isar isar;
+
+  const AddPage({required this.isar});
 
   @override
   State<AddPage> createState() => _AddPageState();

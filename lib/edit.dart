@@ -4,10 +4,10 @@ import 'package:intl/intl.dart';
 import 'collections/car.dart';
 
 class EditPage extends StatefulWidget {
-  const EditPage({required this.isar, required this.car});
-
   final Isar isar;
   final Car car;
+
+  const EditPage({required this.isar, required this.car});
 
   @override
   State<EditPage> createState() => _EditPageState();
@@ -27,6 +27,7 @@ class _EditPageState extends State<EditPage> {
     colorController = TextEditingController(text: car.color ?? "No Color");
     yearController = TextEditingController(text: car.year ?? "No Year");
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
