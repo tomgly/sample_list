@@ -1,4 +1,4 @@
-package com.example.sample_list;
+package com.tomgly.sample_list;
 
 import io.flutter.embedding.android.FlutterActivity;
 

@@ -44,7 +44,7 @@ const CarSchema = CollectionSchema(
   getId: _carGetId,
   getLinks: _carGetLinks,
   attach: _carAttach,
-  version: '3.1.0',
+  version: '3.1.0+1',
 );
 
 int _carEstimateSize(

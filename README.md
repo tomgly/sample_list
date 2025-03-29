@@ -1,145 +1,111 @@
-# sample_list ReadMe
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/tomgly/sample_list/blob/main/README.md)
-[![en](https://img.shields.io/badge/lang-ja-blue.svg)](https://github.com/tomgly/sample_list/blob/main/README.ja.md)
+# Sample List
 
-sample_list is a Flutter project designed for learning Isar Database's local DB package. This README serves as a comprehensive guide, covering everything from installation instructions to a detailed description of its features.
+**sample_list** is a Flutter app for exploring local data management using the powerful [Isar Database](https://isar.dev/).  
+It provides a simple, customizable interface for creating and managing item lists - perfect for learning or as a starter template for your own applications.
 
-## Table of Contents
+- 📦 Built with **Isar DB**  
+- 🌐 View database content from your browser  
+- 🚀 Planning to integrate **Riverpod** and **GoRouter**
+
+## 📚 Table of Contents
 
 - [Features](#features)
-
-- [Installation](#installation)
-
-  - [Prerequisites](#prerequisites)
-
-  - [Clone the Repository](#clone-the-repository)
-
-  - [Configuration](#configuration)
-
-  - [Build and Run](#build-and-run)
-
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Customizing Models](#customizing-models)
 - [Usage](#usage)
-
-- [Contributing](#contributing)
-
+- [Roadmap](#roadmap)
 - [License](#license)
 
-## Features
+## ✨ Features
 
-List the key features and functionalities of sample_list:
+- **Local-first storage** using [Isar](https://isar.dev/) — fast, reactive, and schema-based.
+- **Browser inspection**: Use [Isar Inspector](https://isar.dev/inspector.html) to view data in your browser.
+- **Customizable models**: Tailor your data models (e.g., cars, tasks, books) to suit your needs.
+- **Simple UI**: Clean layout with list creation, editing, and deletion.
+- **Flutter Slidable integration** for intuitive swipe actions.
 
-- **Customizable**: You can change to any item you like. I'm developing an app to manage cars, so I'm using Databese for car.
+## 📸 Screenshots
 
-- **Local Database Management**: Utilizing Isar Database's local DB package, sample_list allows for efficient management of local databases.
+Here are some screenshots of the app in action
 
-- **List Creation and Management**: Easily create, edit, and delete lists to organize your items efficiently.
+<p align="center">
+  <img src="screenshots/home.png" width="200" alt="Home Screen" style="margin-right: 20px"/>
+  <img src="screenshots/add.png" width="200" alt="Add Car Screen" style="margin-right: 20px"/>
+  <img src="screenshots/edit.png" width="200" alt="Edit Car Screen" style="margin-right: 20px"/>
+</p>
 
-- **User-Friendly Interface**: The app boasts a clean and intuitive interface, making it easy for users to navigate and utilize its features.
 
-## Installation
+## 🚀 Getting Started
 
-Follow these steps to install and run sample_list on your system.
+### Requirements
 
-### Prerequisites
+Make sure you have Flutter and the following packages:
 
-Before you begin, ensure you have the following dependencies and tools installed:
+- [`isar`](https://pub.dev/packages/isar)
+- [`intl`](https://pub.dev/packages/intl)
+- [`flutter_slidable`](https://pub.dev/packages/flutter_slidable)
 
-- [isar](https://pub.dev/packages/isar)
-
-- [intl](https://pub.dev/packages/intl)
-
-- [flutter_slidable](https://pub.dev/packages/flutter_slidable)
-
-### Clone the Repository
-
-1. Open your terminal or command prompt.
-
-2. Use the following command to clone the sample_list repository:
+### Installation
 
 ```bash
 git clone https://github.com/tomgly/sample-list.git
-```
-
-### Configuration
-
-1. Change your working directory to the cloned repository:
-
-```bash
 cd sample-list
-```
-
-2. Install the required dependencies using:
-
-```bash
 flutter pub get
 ```
 
-3. If you want to change your items, edit this [collections/car.dart](lib/collections/car.dart) or create a new file like this:
+### Customizing Models
+You can modify or create your own data collections.
+Example: `lib/collections/car.dart`
 
 ```dart
 import 'package:isar/isar.dart';
 
-part '[File Name].g.dart';
+part 'car.g.dart';
 
 @Collection()
-class [File Name] {
-  /// ID to auto-increment
+  class Car {
   Id id = Isar.autoIncrement;
-
-  /// Item Name
   late String name;
 }
-```
 
-4. Run the following command to generate an auto-generated file of collection classes:
+Generate code with
 
 ```bash
 flutter pub run build_runner build
 ```
 
-When executed, *.g.dart file is automatically generated as follows this:
+It will create a corresponding .g.dart file.
 
-```
-.
-└── collections
-    ├── [File Name].dart
-    ├── [File Name].g.dart
-```
-
-
-### Build and Run
-
-1. Connect your device or start an emulator.
-
-2. To build and run the project, use the following command:
+## ▶️ Usage
+After running the app
 
 ```bash
-flutter build
 flutter run
 ```
 
-This will build the project and install it on your connected device or emulator.
+You can
 
-## Usage
+- Add, edit, and delete items on app
+- View your database with the Isar Inspector
 
-Once the application is running, you can start creating item lists and managing your items effortlessly.
+## 🛣️ Roadmap
+Here's what's planned for future updates
 
-## Contributing
+- ✅ Isar local DB integration 
+- ✅ Swipe actions with flutter_slidable 
+- 🔜 Riverpod for state management 
+- 🔜 GoRouter for scalable navigation 
+- 🔜 Export/import data 
 
-We welcome contributions to sample_list. If you would like to contribute to the development or report issues, please follow these guidelines:
+Feel free to suggest more via [Issues](https://github.com/tomgly/sample_list/issues)!
 
-1. Fork the repository.
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
 
-2. Create a new branch for your feature or bug fix.
+---
 
-3. Make your changes and commit them with descriptive messages.
-
-4. Push your changes to your fork.
-
-5. Submit a pull request to the main repository.
-
-## License
-
-sample_list is licensed under the [MIT](LICENSE).
-
-Thank you for choosing and reading all sample_list! If you encounter any issues or have suggestions for improvements, please don't hesitate to [create an issue](https://github.com/tomgly/sample_list/issues) or [contribute to the project](#contributing). We look forward to your feedback and collaboration.
+If you have any feedback or ideas, feel free to [create an issue](https://github.com/tomgly/sample_list/issues).
+Thanks for checking out Sample List!
